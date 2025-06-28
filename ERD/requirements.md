@@ -67,3 +67,7 @@ This is a text-based ER diagram representing the normalized database structure f
 - `payments` relate to `bookings`.
 - `reviews` are linked to both `users` and `properties`.
 - `messages` are between users (sender → recipient).
+
+---
+
+[Database Design from draw.io](https://drive.google.com/file/d/1Y7kZRWMZWD3I5_hcuOsvGuLAmY2WSxtP/view?usp=sharing)
