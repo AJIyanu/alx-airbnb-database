@@ -1,4 +1,3 @@
-
 # Airbnb Clone - Text-based ER Diagram
 
 This is a text-based ER diagram representing the normalized database structure for the Airbnb clone.
@@ -12,14 +11,14 @@ This is a text-based ER diagram representing the normalized database structure f
 |   states   |<---------|   cities   |<---------| properties |
 |------------|          |------------|          |------------|
 | state_id PK|          | city_id PK |          | property_id PK
-| state_name |          | city_name  |          | host_id FK
-+------------+          | state_id FK|          | name
-                        +------------+          | description
-                                                 | city_id FK
-                                                 | price_per_night
-                                                 | created_at
-                                                 | updated_at
-                                                 +------------+
+| state_name |          | city_name  |          | host_id FK |
++------------+          | state_id FK|          | name       |
+                        +------------+          | description|
+                                                | city_id FK |
+                                                | price_per_night
+                                                | created_at |
+                                                | updated_at |
+                                                +------------+
                                                       |
                                                       v
                                                  +------------+
@@ -39,8 +38,8 @@ This is a text-based ER diagram representing the normalized database structure f
 | property_id|          | amount     |          | property_id|
 | start_date |          | method     |          | rating     |
 | end_date   |          +------------+          | comment    |
-| total_price|                                 | created_at |
-| status     |                                 +------------+
+| total_price|                                  | created_at |
+| status     |                                  +------------+
 | created_at |
 +------------+
 
