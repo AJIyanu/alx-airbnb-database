@@ -13,3 +13,10 @@ CREATE INDEX idx_properties_city_id ON properties(city_id);
 CREATE INDEX idx_properties_host_id ON properties(host_id);
 CREATE INDEX idx_properties_price ON properties(price_per_night);
 CREATE INDEX idx_properties_created_at ON properties(created_at);
+
+
+EXPLAIN ANALYZE
+SELECT * 
+FROM bookings 
+WHERE status = 'confirmed' 
+AND start_date >= '2025-07-01';
